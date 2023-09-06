@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="main-city.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <input type="search" placeholder="Digite um local" class="input-city" />
+        <button class="btnSearch" onclick="buttonClick()">
+          <img src="./assets/images/lupa.svg" alt="lupa" class="img-search" />
+        </button>
+
+        <div class="infos-city">
+          <h2 class="city">
+            Tempo em <span class="weather-city">Fortaleza</span>
+          </h2>
+
+          <div class="infos-w">
+            <img src="./assets/images/icon.png" alt="nuvem" class="img-forecast" />
+            <p class="weather-category"></p>
+          </div>
+
+          <div class="parametros">
+            <p class="temp"><span class="tempp"></span>°C</p>
+            <p class="sens">Sensação de: <span class="feelslike"></span>°C</p>
+            <div class="aux">
+              <div class="sensor">
+                <p class="params textparams">
+                  <img
+                    src="./assets/images/humidity.png"
+                    alt="humidity"
+                    class="imgparam"
+                  /><span class="textparams umidd"></span> %
+                </p>
+              </div>
+              <div class="sensor">
+                <p class="params textparams">
+                  <img
+                    src="./assets/images/pressure.png"
+                    alt="pressure"
+                    class="imgparam"
+                  /><span class="textparams press"></span> hPa
+                </p>
+              </div>
+              <div class="sensor">
+                <p class="params textparams">
+                  <img
+                    src="./assets/images/wind.png"
+                    alt="wind"
+                    class="imgparam"
+                  /><span class="textparams speed"></span> m/s
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
