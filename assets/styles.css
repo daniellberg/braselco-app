@@ -61,6 +61,11 @@ body {
     transform: translateY(-100%);
 }
 
+.btnSearchCity {
+    transform: translateY(1%);
+    height: 15%;
+}
+
 .btnSearch:hover {
     background-color: #c7c7c7d3;
     transition: ease-in-out .2s;
